@@ -1,0 +1,5 @@
+{
+    "src": "./dist",
+    "dest": "qiniu:access_key=kQdEWJ6924zBbQYSMuCw71rc-aBNBousngwAtjIE&secret_key=Ukh9-yuxS7gvqHN0gJ1jZPGXmHdEARL9BFVLipBE&bucket=puzheng-official-site",
+    "debug_level": 1
+}
