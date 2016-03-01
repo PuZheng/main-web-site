@@ -1,0 +1,63 @@
+logo: 
+    助客户快速，可靠，低风险的实现商业目标
+
+title:
+    助您快速稳妥的实现商业价值
+
+subtitle:
+    明思工作室提供专业高效的网站类, 手机应用类项目外包服务，我们愿和您一起在这个充满未知风险的世界里，攻克道道项目难关
+
+telephone:
+    18658168578
+
+email:
+    xiechao06@gmail.com
+
+studioName:
+    蜂鸟工作室
+
+aboutUs:
+    title: 
+        "这是一支强力的专业IT技术开发团队!"
+    detail:
+        "我们来自华为，网易等国内一流IT研发企业。团队成员均有丰富的项目开发经验， 并长期实践敏捷开发模式。 自团队成立起，我们与客户一起，实现了多个基于WEB， 手机客户端的解决方案／产品，其中不乏较难攻克的技术难点。 未来我们将持续提升团队的业务／技术能力，期待为客户带来更为高效优质的服务"
+
+cases:
+
+    - { id: 1, name: "某热镀锌工厂管理系统", pic: "img/portfolio/1.jpg" }
+    - { id: 2, name: "商品防伪应用", pic: "img/portfolio/1.jpg" }
+    - { id: 3, name: "T恤卫衣在线定制", pic: "img/portfolio/1.jpg" }
+    - { id: 4, name: "PPP项目管理系统", pic: "img/portfolio/1.jpg" }
+    - { id: 5, name: "云服务延迟在线监控", pic: "img/portfolio/1.jpg" }
+    - { id: 6, name: "加气站垂直搜索", pic: "img/portfolio/1.jpg" }
+
+features:
+
+    - 
+        name: 
+            "从您的商业利益出发"
+        icon: 
+            "diamond"
+        detail: 
+            "从业务层面上理解您的需求，以最终商业意图为重"
+        link: 
+            ""
+    
+    - 
+        name: "项目过程透明可控"
+        icon: "plane"
+        detail: "采用敏捷开发范式，保证快速响应，定期发布进展，使您对项目了如指掌"
+        link: ""
+    
+    - 
+        name: "专业，高效"
+        icon: "newspaper-o"
+        detail: "专注于WEB，手机客户端。在这些技术方向上积累了丰富经验"
+        link: ""
+    
+    - 
+        name: "站好最后一岗"
+        icon: "heart"
+        detail: "对于要求后期移交的项目，专门制定了详细的移交，保证项目后续可以继续发展，扩大 "
+        link: ""
+    
