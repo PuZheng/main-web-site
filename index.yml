@@ -5,7 +5,7 @@ title:
     助您快速稳妥的实现商业价值
 
 subtitle:
-    明思工作室提供专业高效的网站类, 手机应用类项目外包服务，我们愿和您一起在这个充满未知风险的世界里，攻克道道项目难关
+    蜂鸟工作室提供专业高效的网站类, 手机应用类项目外包服务，我们愿和您一起在这个充满未知风险的世界里，攻克道道项目难关
 
 telephone:
     18658168578
@@ -24,7 +24,7 @@ aboutUs:
 
 cases:
 
-    - { id: 1, name: "某热镀锌工厂管理系统", pic: "img/portfolio/1.jpg" }
+    - { id: 1, name: "某热镀锌工厂管理系统", pic: "img/portfolio/1.png" }
     - { id: 2, name: "商品防伪应用", pic: "img/portfolio/1.jpg" }
     - { id: 3, name: "T恤卫衣在线定制", pic: "img/portfolio/1.jpg" }
     - { id: 4, name: "PPP项目管理系统", pic: "img/portfolio/1.jpg" }

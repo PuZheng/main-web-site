@@ -12,6 +12,8 @@ var rimraf = require('gulp-rimraf');
 var spawn = require('child_process').spawnSync;
 var fileinclude = require('gulp-file-include');
 var markdown = require('gulp-markdown-it');
+var dom  = require('gulp-dom');
+var mdFigCaption = require('mdfigcaption');
 
 gulp.task('connect', function () {
     connect.server({
@@ -29,10 +31,20 @@ gulp.task('watch', function () {
 });
 
 gulp.task('md', function () {
-    return gulp.src('cases/**/*.md').pipe(markdown()).pipe(gulp.dest('dist/cases'));
+    return gulp.src('cases/**/*.md').pipe(markdown({
+		options: {
+			highlight: function (str, lang) {
+				if (lang === 'mermaid') {
+					return '<div class="mermaid">' + str + '</div>';
+				}
+			}
+		},
+        plugins: ['mdfigcaption', 'markdown-it-attrs']
+	})).pipe(gulp.dest('dist/cases'));
 });
 
 gulp.task('html', ['md'], function () {
+	gulp.src('preview-case.html').pipe(template()).pipe(gulp.dest('dist'));
     gulp.src('index.html').pipe(data(function (file, cb) {
         yaml.load(path.basename(file.path).split('.')[0] + '.yml', function (result) {
             cb(undefined, result);

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/case.css" type="text/css">
+
+    <link href="//cdn.bootcss.com/mermaid/0.5.8/mermaid.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="md" class="case-md">
+    </div>
+    <script src="//cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/js-url/2.1.0/url.min.js"></script>
+    <script src="//cdn.bootcss.com/mermaid/0.5.8/mermaidAPI.min.js"></script>
+
+    <script>
+      mermaidAPI.initialize({startOnLoad:true});
+      $(function () {
+        var caseNo = $.url('?case');
+        $('#md').load('cases/' + caseNo + '.html', function () {
+          $('#md .mermaid').each(function (idx) {
+            var def = $(this).text();
+            $('body').append($('<div id="graph' + idx + '"></div>'));
+            var $that = $(this);
+            mermaidAPI.render('graph' + idx, def, function(svgCode, bindFunctions){
+              $that.html(svgCode);
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
