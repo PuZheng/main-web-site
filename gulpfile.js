@@ -13,6 +13,7 @@ var spawn = require('child_process').spawnSync;
 var fileinclude = require('gulp-file-include');
 var markdown = require('gulp-markdown-it');
 var dom  = require('gulp-dom');
+var mdFigCaption = require('mdfigcaption');
 
 gulp.task('connect', function () {
     connect.server({
@@ -37,7 +38,8 @@ gulp.task('md', function () {
 					return '<div class="mermaid">' + str + '</div>';
 				}
 			}
-		}
+		},
+        plugins: ['mdfigcaption', 'markdown-it-attrs']
 	})).pipe(gulp.dest('dist/cases'));
 });
 

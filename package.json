@@ -19,7 +19,9 @@
     "gulp-rimraf": "^0.2.0",
     "gulp-template": "^3.1.0",
     "imagemin-pngquant": "^4.2.2",
+    "markdown-it-attrs": "^0.1.8",
     "markdown-it-container": "^2.0.0",
+    "mdfigcaption": "^0.1.1",
     "mermaid": "^0.5.8",
     "yamljs": "^0.2.5"
   },
