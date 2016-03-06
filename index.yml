@@ -25,8 +25,8 @@ aboutUs:
 cases:
 
     - { id: 1, name: "某热镀锌工厂管理系统", pic: "img/portfolio/1.png" }
-    - { id: 2, name: "商品防伪应用", pic: "img/portfolio/1.jpg" }
-    - { id: 3, name: "T恤卫衣在线定制", pic: "img/portfolio/1.jpg" }
+    - { id: 2, name: "NFC防伪应用", pic: "img/portfolio/1.jpg" }
+    - { id: 3, name: "T恤卫衣在线定制系统", pic: "img/portfolio/1.jpg" }
     - { id: 4, name: "PPP项目管理系统", pic: "img/portfolio/1.jpg" }
     - { id: 5, name: "云服务延迟在线监控", pic: "img/portfolio/1.jpg" }
     - { id: 6, name: "加气站垂直搜索", pic: "img/portfolio/1.jpg" }
